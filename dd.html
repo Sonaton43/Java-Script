@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*console.log("hello World!");
+        let a = 67;
+        let b = "My Name is Sonaton Kundu";
+        console.log(a)
+        console.log(b)
+        a = "dj dj"
+        console.log(a);*/
+
+        let a = null;
+        let b = 34;
+        let c = true;
+        let d = BigInt(5645);
+        let e = "story";
+        let f = Symbol("this is symbol");
+        let g = undefined;
+
+        console.log(a, b, c, d, e, f, g);
+        console.log(typeof c);
+
+        const array = {
+            "name" : "sonaton",
+            "roll" : 43,
+            "Male" : true
+        }
+        console.log(array["name"])
+        console.log(array.roll);
+
+        console.log(b++);
+        console.log(b++);
+
+        let text = prompt("input any number: ")
+        text = Number.parseInt(text)
+        if(text>0){
+            alert("this nuber are ok")
+        }else{
+            alert("the number is not ok")
+        }
+        console.log("You can", text<18? "not drive": "drive")
+        const check = "green";
+        switch(check){
+            case "red":
+                console.log("this color is red");
+                break;
+            case "blue":
+                console.log("this color is blue");
+                break;
+            case "green":
+                console.log("this color is green");
+                break;
+        }
+    </script>
+</body>
+</html>

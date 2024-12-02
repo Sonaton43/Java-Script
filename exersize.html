@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = prompt("Eneter Your Age: ")
+        age = Number.parseInt(age);
+        if(age>10 && age<20){
+            console.log("this is true")    
+        }else{
+            console.log("this is false")
+        }
+
+        switch(age){
+            case 12 :
+            console.log("your age is 12")
+            break;
+            case 14 :
+            console.log("your age is 14")
+            break;
+            case 16 :
+            console.log("your age is 16")
+            break;
+            case 18 :
+            console.log("your age is 18")
+            break;
+            default:
+            console.log("your age is not special");
+        }
+        let sum = 0;
+        for(i = 0; i<age; i++)
+        {
+            sum += i+1;
+            console.log(i+1),"+"
+        }
+        console.log(sum);
+
+        let obj = {
+            harry: 33,
+            sonaton: 44,
+            mona: 56,
+            lolit: 44
+        }
+        for(let j in obj){
+            console.log("Mark of " + j + " are" + obj[j])
+        }
+
+        
+    </script>
+</body>
+</html>
