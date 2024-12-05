@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Class Example</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .dark{
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            color: #000;
+            transition: 0.3s ease;
+        }
+        .dark-add{
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+    <script>
+        function addClassToElements() {
+            var elements = document.getElementsByClassName("example");
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].classList.add("highlight");
+            }
+        }
+        function addClass(element){
+            element.classList.toggle(dark-add)
+        }
+    </script>
+</head>
+<body>
+
+    <div class="example">This is the first example div.</div>
+    <div class="example">This is the second example div.</div>
+    <div class="example">This is the third example div.</div>
+    
+    <button onclick="addClassToElements()">Click to Highlight</button>
+
+    <div class="dark" onclick="addClass()">
+        <h2>Div content</h2>
+    </div>
+
+</body>
+</html>

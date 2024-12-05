@@ -5,12 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-
+        function changeColor(color){
+            document.body.style.backgroundColor = color;
+        }
+        function divCNG(color2){
+            let div = document.getElementById("div2")
+            if(div.style.backgroundColor === "lightgray"){
+                div.style.backgroundColor = color2;
+                div.style.color = "white";
+            }else{
+                div.style.backgroundColor = "lightgray";
+                div.style.color = "black";
+            }
+        }
     </script>
 </head>
 <body>
     <button onclick="changeColor('green')">green</button>
-    <button onclick="changeColor('green')">red</button>
+    <button onclick="changeColor('red')">red</button>
     <button onclick="changeColor('blue')">blue</button>
+
+    <div id="div2" style="width:200px; height:200px; background-color: lightgray;" onclick="divCNG('red')">
+        <h2 style="padding: 20px;">This is Div 2</h2>
+    </div>
 </body>
 </html>
