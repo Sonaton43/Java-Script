@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let roll = {
+            sartho : 10,
+            partho : 15,
+            sonaton : 18,
+        }
+
+        for(let i = 0; i<Object.keys(roll).length; i++){
+            console.log("The Mark of " + Object.keys(roll)[i] + " are : " + roll[Object.keys(roll)[i]]);
+        }
+
+        for(let key in roll){
+            console.log("The Mark of " + key + " are : " + roll[key] + " Simple Formula")
+        }
+
+        //if chekck the user value are not correct loop is running
+        let check = 43;
+        let i;
+        while(i != check){
+            i = prompt("Enter a lucky number: ");
+        }
+        consle.log("You have Enter The correct Number")  
+
+    </script>
+</body>
+</html>

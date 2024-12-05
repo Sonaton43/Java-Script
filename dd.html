@@ -3,60 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Menu System</title>
+    <style>
+        .submenu {
+            display: none;
+            margin-left: 20px;
+        }
+    </style>
     <script>
-        /*console.log("hello World!");
-        let a = 67;
-        let b = "My Name is Sonaton Kundu";
-        console.log(a)
-        console.log(b)
-        a = "dj dj"
-        console.log(a);*/
-
-        let a = null;
-        let b = 34;
-        let c = true;
-        let d = BigInt(5645);
-        let e = "story";
-        let f = Symbol("this is symbol");
-        let g = undefined;
-
-        console.log(a, b, c, d, e, f, g);
-        console.log(typeof c);
-
-        const array = {
-            "name" : "sonaton",
-            "roll" : 43,
-            "Male" : true
-        }
-        console.log(array["name"])
-        console.log(array.roll);
-
-        console.log(b++);
-        console.log(b++);
-
-        let text = prompt("input any number: ")
-        text = Number.parseInt(text)
-        if(text>0){
-            alert("this nuber are ok")
-        }else{
-            alert("the number is not ok")
-        }
-        console.log("You can", text<18? "not drive": "drive")
-        const check = "green";
-        switch(check){
-            case "red":
-                console.log("this color is red");
-                break;
-            case "blue":
-                console.log("this color is blue");
-                break;
-            case "green":
-                console.log("this color is green");
-                break;
+        function toggleMenu(menuId) {
+            var submenu = document.getElementById(menuId);
+            if (submenu.style.display === "none") {
+                submenu.style.display = "block";
+            } else {
+                submenu.style.display = "none";
+            }
         }
     </script>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <a href="#" onclick="toggleMenu('submenu1')">Menu 1</a>
+            <ul id="submenu1" class="submenu">
+                <li><a href="#">Submenu 1.1</a></li>
+                <li><a href="#">Submenu 1.2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" onclick="toggleMenu('submenu2')">Menu 2</a>
+            <ul id="submenu2" class="submenu">
+                <li><a href="#">Submenu 2.1</a></li>
+                <li><a href="#">Submenu 2.2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Menu 3</a></li>
+    </ul>
+
 </body>
 </html>

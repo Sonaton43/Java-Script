@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .submenu{
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleMenu(subItem){
+            let submenu = document.getElementById(subItem)
+            if(submenu.style.display === "none"){
+                submenu.style.display = "block"
+            }else{
+                submenu.style.display = "none"
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#" onclick="toggleMenu('submenu1')">Menu #</a>
+        <ul id="submenu1" class="submenu">
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+        </ul>
+        <a href="#">About</a>
+        <a href="#" onclick="toggleMenu('submenu2')">Items #</a>
+        <ul id="submenu2" class="submenu">
+            <li>Items 1</li>
+            <li>Items 2</li>
+            <li onclick="toggleMenu('submenu3')">Items 3</li>
+            <ul id="submenu3" class="submenu">
+                <li>Sub Items 1</li>
+            </ul>
+        </ul>
+    </nav>
+</body>
+</html>
