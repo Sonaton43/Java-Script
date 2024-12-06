@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        nav{
+            width: 100%;
+            background-color: #005a75;
+            padding: 10px;
+        }
+        nav a{
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
         .submenu{
             display: none;
         }
@@ -23,20 +33,21 @@
 <body>
     <nav>
         <a href="#" onclick="toggleMenu('submenu1')">Menu #</a>
-        <ul id="submenu1" class="submenu">
-            <li>Menu 1</li>
-            <li>Menu 2</li>
-        </ul>
+        
         <a href="#">About</a>
         <a href="#" onclick="toggleMenu('submenu2')">Items #</a>
-        <ul id="submenu2" class="submenu">
-            <li>Items 1</li>
-            <li>Items 2</li>
-            <li onclick="toggleMenu('submenu3')">Items 3</li>
-            <ul id="submenu3" class="submenu">
-                <li>Sub Items 1</li>
-            </ul>
-        </ul>
     </nav>
+    <ul id="submenu1" class="submenu">
+        <li>Menu 1</li>
+        <li>Menu 2</li>
+    </ul>
+    <ul id="submenu2" class="submenu">
+        <li>Items 1</li>
+        <li>Items 2</li>
+        <li onclick="toggleMenu('submenu3')">Items 3</li>
+        <ul id="submenu3" class="submenu">
+            <li>Sub Items 1</li>
+        </ul>
+    </ul>
 </body>
 </html>
